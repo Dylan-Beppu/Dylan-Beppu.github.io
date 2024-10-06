@@ -10980,6 +10980,8 @@ html {
 }
 .masthead .masthead-avatar {
   width: 15rem;
+  border-radius: 100%;
+  filter: drop-shadow(0px 0px 20px rgba(var(--bs-dark-rgb)));
 }
 
 @media (min-width: 992px) {
