@@ -114,8 +114,11 @@
 
 .centred-container {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
+    gap: 1vw;
+    /* height: 100vh; Optional: Make the container fill the full viewport height */
 }
 
 .obj-left {
@@ -123,17 +126,18 @@
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
     flex-direction: row; /* Ensure items are in a row */
-    max-width: 90%;
+    max-width: 80%;
+    width: 80%;
 
     /* backround stuff */
     background-color: #cccccc99;
-    border-radius: 8px;
+    border-radius: 1vw;
     
 }
 
 .left-img {
     width: 30%;
-    border-radius: 16px;
+    border-radius: 2vw;
     padding: 1vw;
     margin-right: 20px; /* Optional: Add some space between the image and the text */
 }
@@ -142,7 +146,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align items to the left */
-    
+
 }
 
 
