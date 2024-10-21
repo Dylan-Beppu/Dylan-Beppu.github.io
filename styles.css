@@ -1,6 +1,8 @@
 #top-thing {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center items along the x-axis */
+
 }
 
 .pfp {
@@ -14,33 +16,60 @@
 }
 
 #AboutSplit {
-    max-width: 600px;
+    max-width: 60%;
+    max-height: fit-content;
 }
 
-#top-thing {
+
+
+.pfp {
     display: flex;
-    align-items: center;
-}
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 30%;
 
-.pfp {
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 .pfp-img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    /* width: 100%; */
+    width: 70%;
+    height: auto;
+    margin: 50px;
+    /* height: 40%; */
+    /* aspect-ratio: 1; */
 }
 
-#AboutSplit {
-    max-width: 600px;
-}
+
 
 .profolio-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px; /* Adjust the gap between items as needed */
 }
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 12.5px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: 5px;
+    border-color: black;
+    border-radius: 26px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
 
 .portfolio-things {
     padding: 5px;
