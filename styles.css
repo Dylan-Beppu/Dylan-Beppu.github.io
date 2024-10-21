@@ -1,3 +1,16 @@
+.top-intro {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    /* display: flex; */
+    /* margin: 0; */
+    /* padding: 0; */
+    height: 100%;
+}
+  
+
 #top-thing {
     display: flex;
     align-items: center;
@@ -45,13 +58,15 @@
 
 .divider {
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 1vw;
     /* Adjust the margin as needed */
     /* margin: 20px 0; */
 }
 
 .divider span {
     display: inline-block;
-    background: white; /* Match the background color of your page */
+
     padding: 0 10px; /* Adjust padding as needed */
     position: relative;
     top: -10px; /* Adjust to vertically center the text over the line */
@@ -124,10 +139,10 @@
 .obj-left {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    align-items: center;
+    /* align-items: center; */
     flex-direction: row; /* Ensure items are in a row */
-    max-width: 80%;
-    width: 80%;
+    max-width: 85%;
+    width: 85%;
 
     /* backround stuff */
     background-color: #cccccc99;
@@ -135,11 +150,26 @@
     
 }
 
-.left-img {
+.img-box {
+    display: flex;
+    align-items: center;
+
     width: 30%;
+    min-width: 30%;
     border-radius: 2vw;
-    padding: 1vw;
+    margin-right: 1vw;
+    /* padding: 1vw; */
     margin-right: 20px; /* Optional: Add some space between the image and the text */
+}
+
+.left-img {
+    /* align-items: center; */
+    object-fit: cover;  
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    /* padding: 1vw; */
+    /* margin-right: 20px; Optional: Add some space between the image and the text */
 }
 
 .right-txt {
@@ -150,3 +180,23 @@
 }
 
 
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bottom-bar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    
+    width: 85%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    /* height: 2vw; */
+    min-height: 5vh;
+    background-color: #0056b3;
+    margin-top: auto; /* Pushes the bottom-bar to the bottom */
+  }
