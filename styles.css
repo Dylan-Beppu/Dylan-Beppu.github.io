@@ -43,11 +43,29 @@
 
 
 
-.profolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px; /* Adjust the gap between items as needed */
+.divider {
+    text-align: center;
+    /* Adjust the margin as needed */
+    /* margin: 20px 0; */
 }
+
+.divider span {
+    display: inline-block;
+    background: white; /* Match the background color of your page */
+    padding: 0 10px; /* Adjust padding as needed */
+    position: relative;
+    top: -10px; /* Adjust to vertically center the text over the line */
+}
+
+.divider hr {
+    border: 0;
+    border-top: 6px solid #ccc; /* Adjust the color and thickness of the line */
+    border-radius: 3px;
+    margin: 0;
+}
+
+
+
 
 
 .btn {
@@ -69,6 +87,22 @@
     background-color: #0056b3;
 }
 
+.centred-container {
+    display: flex;
+    justify-content: center;
+}
+
+.profolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 90%;
+    gap: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    /* justify-content: center; */
+    /* Adjust the gap between items as needed */
+    /* gap: 20px;  */
+}
 
 
 .portfolio-things {
@@ -77,19 +111,30 @@
 
 .project-obj {
     position: relative;
-    max-width: 100%; /* Ensure items take full width of their grid cell */
-    border: 1px solid #ccc; /* Optional: Add border for better visualization */
-    padding: 10px; /* Optional: Add padding inside each project item */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visualization */
+    width: 100%; /* Ensure items take full width of their grid cell */
+    /* 16:9 aspect ratio (9 / 16 * 100) */
+    padding-top: 56.25%;
+    /* padding: 5px; */
+    /* width: 50vw; */
+    height: auto;
+    border-radius: 1vw;
+    overflow: hidden; /* Ensure content does not overflow the container */
 }
 
 .image-container {
-    position: relative;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
 
 .display-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    border-radius: 8px;
+
+    /* height: auto; */
 }
 
 .overlay {
