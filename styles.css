@@ -87,72 +87,62 @@
     background-color: #0056b3;
 }
 
+.btnInline {
+    display: inline-flex; /* Ensure the button only takes up as much space as its content */
+    align-items: center; /* Center the content vertically */
+    padding: 10px 20px; /* Add some padding for better appearance */
+    background-color: #007bff; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor on hover */
+    align-self: flex-start; /* Prevent the button from stretching */
+
+}
+
+.btnInline i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.btnInline:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+
+
 .centred-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.profolio-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+.obj-left {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    flex-direction: row; /* Ensure items are in a row */
     max-width: 90%;
-    gap: 1vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    /* justify-content: center; */
-    /* Adjust the gap between items as needed */
-    /* gap: 20px;  */
-}
 
-
-.portfolio-things {
-    padding: 5px;
-}
-
-.project-obj {
-    position: relative;
-    width: 100%; /* Ensure items take full width of their grid cell */
-    /* 16:9 aspect ratio (9 / 16 * 100) */
-    padding-top: 56.25%;
-    /* padding: 5px; */
-    /* width: 50vw; */
-    height: auto;
-    border-radius: 1vw;
-    overflow: hidden; /* Ensure content does not overflow the container */
-}
-
-.image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;}
-
-.display-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+    /* backround stuff */
+    background-color: #cccccc99;
     border-radius: 8px;
-
-    /* height: auto; */
+    
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.left-img {
+    width: 30%;
+    border-radius: 16px;
+    padding: 1vw;
+    margin-right: 20px; /* Optional: Add some space between the image and the text */
+}
+
+.right-txt {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    justify-content: flex-start; /* Align items to the left */
+    
 }
 
-.image-container:hover .overlay {
-    opacity: 1;
-}
+
