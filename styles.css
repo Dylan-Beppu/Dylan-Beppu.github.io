@@ -40,6 +40,7 @@ body, html {
     justify-content: center;
     /* align-items: center; */
     max-width: 30%;
+    min-width: 5cm;
 
     /* margin-right: 20px; */
 }
@@ -54,7 +55,12 @@ body, html {
     /* aspect-ratio: 1; */
 }
 
-
+.Rounded-btns > *{
+    /* margin-top: 5px; */
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    /* padding: 0px; */
+}
 
 .divider {
     text-align: center;
@@ -132,7 +138,7 @@ body, html {
     flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 1rem;
     /* height: 100vh; Optional: Make the container fill the full viewport height */
 }
 
@@ -146,7 +152,7 @@ body, html {
 
     /* backround stuff */
     background-color: #cccccc99;
-    border-radius: 1vw;
+    border-radius: 1rem;
     
 }
 
@@ -179,7 +185,11 @@ body, html {
 
 }
 
-
+.inlineRblx {
+    width: 16px;
+    height: 16px;
+    vertical-align: -.125em;
+}
 
 .container {
     flex: 1;
