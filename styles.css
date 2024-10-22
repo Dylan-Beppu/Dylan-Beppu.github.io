@@ -30,9 +30,9 @@ body, html {
 
 #AboutSplit {
     max-width: 60%;
+    min-width: 60%;
     max-height: fit-content;
 }
-
 
 
 .pfp {
