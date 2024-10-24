@@ -11,6 +11,10 @@ body, html {
 }
   
 
+p {
+    margin: 5px;
+}
+
 #top-thing {
     display: flex;
     align-items: center;
@@ -63,6 +67,8 @@ body, html {
 }
 
 .divider {
+    align-items: center;
+    justify-items: center;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 1vw;
@@ -72,7 +78,7 @@ body, html {
 
 .divider span {
     display: inline-block;
-
+    
     padding: 0 10px; /* Adjust padding as needed */
     position: relative;
     top: -10px; /* Adjust to vertically center the text over the line */
@@ -83,6 +89,7 @@ body, html {
     border-top: 6px solid #ccc; /* Adjust the color and thickness of the line */
     border-radius: 3px;
     margin: 0;
+    width: 95%;
 }
 
 
@@ -115,11 +122,12 @@ body, html {
     background-color: #007bff; /* Background color */
     color: white; /* Text color */
     text-decoration: none; /* Remove underline from the link */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 26px; /* Rounded corners */
     font-size: 16px; /* Font size */
     border: none; /* Remove border */
     cursor: pointer; /* Pointer cursor on hover */
-    align-self: flex-start; /* Prevent the button from stretching */
+    align-self: flex-start;
+    /* Prevent the button from stretching */
 
 }
 
@@ -195,18 +203,46 @@ body, html {
     flex: 1;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .bottom-bar {
+  /* .bottom-bar {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     justify-content: center;
     
-    width: 85%;
     padding-left: 7.5%;
     padding-right: 7.5%;
-    /* height: 2vw; */
     min-height: 5vh;
     background-color: #0056b3;
-    margin-top: auto; /* Pushes the bottom-bar to the bottom */
+    margin-top: auto; 
   }
+
+  .bottom-frame {
+    
+  } */
+
+
+.bottom-bar {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bottom-frame {
+    width: 95%;
+    padding: 0.5cm;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0056b3;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+}
+
+.bottom-bar-left {
+    text-align: left;
+}
+
+.bottom-bar-right {
+    text-align: right;
+}
