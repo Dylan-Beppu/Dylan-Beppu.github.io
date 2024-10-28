@@ -171,7 +171,7 @@ p {
     width: 30%;
     min-width: 30%;
     border-radius: 2vw;
-    margin-right: 1vw;
+    /* margin-right: 1vw; */
     /* padding: 1vw; */
     margin-right: 20px; /* Optional: Add some space between the image and the text */
 }
@@ -190,6 +190,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* Align items to the left */
+    margin-right: 20px;
+    margin-bottom: 20px;
 
 }
 
