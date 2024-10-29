@@ -262,3 +262,36 @@ p {
 .bottom-bar-right {
     text-align: right;
 }
+
+
+@media (max-width: 768px) {
+    #top-thing {
+        flex-direction: column;
+    }
+
+    .pfp {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    #AboutSplit {
+        order: 2;
+    }
+
+    .obj-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .right-txt {
+        width: 100%;
+        /* text-align: center; */
+        margin-right: 0;
+    }
+}
