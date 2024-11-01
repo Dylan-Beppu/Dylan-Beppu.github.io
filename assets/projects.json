@@ -4,7 +4,7 @@
       "image": "assets/img/portfolio/cabin.png",
       "link": "https://github.com/Dylan-Beppu/ToDo-App",
       "sourceType": "github",
-      "description": "A mobile todo list app using a react native framework with a sqlite database."
+      "description": "A mobile todo list app using a react native framework with a sqlite database. Made as a test to play around with react native."
     },
     {
       "name": "Todo list web app",
