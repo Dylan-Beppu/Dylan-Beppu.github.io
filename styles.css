@@ -136,7 +136,7 @@ p {
 }
 
 .btnInline {
-    display: inline-flex; /* Ensure the button only takes up as much space as its content */
+    display: inline; /* Ensure the button only takes up as much space as its content */
     align-items: center; /* Center the content vertically */
     padding: 10px 20px; /* Add some padding for better appearance */
     background-color: #007bff; /* Background color */
