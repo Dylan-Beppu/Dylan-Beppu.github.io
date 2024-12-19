@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
        setTimeout(() => {
             section.classList.add('visible');
        }, delay);
-      delay += 200; // Adjust the delay as needed
+      delay += 100; // Adjust the delay as needed
    });
 
 });
