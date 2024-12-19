@@ -1,37 +1,44 @@
 [
-    {
-      "name": "Todo list mobile app",
-      "image": "assets/img/portfolio/cabin.png",
-      "link": "https://github.com/Dylan-Beppu/ToDo-App",
-      "sourceType": "github",
-      "description": "A mobile todo list app using a react native framework with a sqlite database. Made as a test to play around with react native."
-    },
-    {
-      "name": "Todo list web app",
-      "image": "assets/img/portfolio/cabin.png",
-      "link": "https://github.com/Dylan-Beppu-SPU/NeoHttp_Project",
-      "sourceType": "github",
-      "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
-    },
-    {
-      "name": "T.A.P Roblox plugin",
-      "image": "assets/tappag.png",
-      "link": "https://devforum.roblox.com/t/tap-terrain-angle-painter/2521847",
-      "sourceType": "roblox",
-      "description": "A Roblox plugin that changes terrain material based on angle. Has a fully customizable rule set and support for a user set seed for randomizer."
-    },
-    {
-      "name": "proximity prompt v2 (roblox utility)",
-      "image": "assets/img/portfolio/cabin.png",
-      "link": "https://devforum.roblox.com/t/custom-proximity-prompt-v2/1609158",
-      "sourceType": "roblox",
-      "description": "A graphical solution to modify proximity prompts in Roblox. Supports being a drop-in replacement, graphical modifiable,and modeler to be fully customized"
-    },
-    {
-      "name": "FRC 2020 Team 4270",
-      "image": "assets/img/2020bot.png",
-      "link": "https://github.com/Dylan-Beppu/4270FRC2020",
-      "sourceType": "github",
-      "description": "All the code from the 2020 frc robotics game Infinite Recharge. The software I developed to mix autonomous and manual control won the innovation in control award for the FRC Canada-Pacific reginal competition that year."
-    }
-  ]
+  {
+    "name": "Hanafuda Rust Game",
+    "image": "assets/img/portfolio/Hanafuda.png",
+    "link": "https://github.com/Dylan-Beppu/Hanafuda-Rust-Game",
+    "sourceType": "github",
+    "description": "Hawaiian Style Hanafuda is a variation of the traditional Japanese Hanafuda card game. This project is implemented in Rust using the ncurses library for graphical display."
+  },
+  {
+    "name": "Todo list mobile app",
+    "image": "assets/img/portfolio/cabin.png",
+    "link": "https://github.com/Dylan-Beppu/ToDo-App",
+    "sourceType": "github",
+    "description": "A mobile todo list app using a react native framework with a sqlite database. Made as a test to play around with react native."
+  },
+  {
+    "name": "Todo list web app",
+    "image": "assets/img/portfolio/cabin.png",
+    "link": "https://github.com/Dylan-Beppu-SPU/NeoHttp_Project",
+    "sourceType": "github",
+    "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
+  },
+  {
+    "name": "T.A.P Roblox plugin",
+    "image": "assets/tappag.png",
+    "link": "https://devforum.roblox.com/t/tap-terrain-angle-painter/2521847",
+    "sourceType": "roblox",
+    "description": "A Roblox plugin that changes terrain material based on angle. Has a fully customizable rule set and support for a user set seed for randomizer."
+  },
+  {
+    "name": "proximity prompt v2 (roblox utility)",
+    "image": "assets/img/portfolio/cabin.png",
+    "link": "https://devforum.roblox.com/t/custom-proximity-prompt-v2/1609158",
+    "sourceType": "roblox",
+    "description": "A graphical solution to modify proximity prompts in Roblox. Supports being a drop-in replacement, graphical modifiable,and modeler to be fully customized"
+  },
+  {
+    "name": "FRC 2020 Team 4270",
+    "image": "assets/img/2020bot.png",
+    "link": "https://github.com/Dylan-Beppu/4270FRC2020",
+    "sourceType": "github",
+    "description": "All the code from the 2020 frc robotics game Infinite Recharge. The software I developed to mix autonomous and manual control won the innovation in control award for the FRC Canada-Pacific reginal competition that year."
+  }
+]
