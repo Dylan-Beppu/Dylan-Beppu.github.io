@@ -4,7 +4,7 @@
     "image": "assets/img/portfolio/Hanafuda.png",
     "link": "https://github.com/Dylan-Beppu/Hanafuda-Rust-Game",
     "sourceType": "github",
-    "description": "Hawaiian Style Hanafuda is a variation of the traditional Japanese Hanafuda card game. This project is implemented in Rust using the ncurses library for graphical display."
+    "description": "Hawaiian Style Hanafuda is a variation of the traditional Japanese Hanafuda card game. This project is implemented in Rust using the ncurses library for graphical display. This is the public release of the project done as a term project."
   },
   {
     "name": "Todo list mobile app",
@@ -16,7 +16,7 @@
   {
     "name": "Todo list web app",
     "image": "assets/img/portfolio/cabin.png",
-    "link": "https://github.com/Dylan-Beppu-SPU/NeoHttp_Project",
+    "link": "https://github.com/Dylan-Beppu-SPU/List-app",
     "sourceType": "github",
     "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
   },
