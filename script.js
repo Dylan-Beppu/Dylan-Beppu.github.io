@@ -46,11 +46,16 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#skills-List').innerHTML = generateSkills(skills);
   })
   .catch(error => console.error('Error loading skills:', error));
-});
 
-window.onload = function() {
-  var link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = 'styles.css';
-  document.head.appendChild(link);
-};
+
+  const sections = document.querySelectorAll('.fade-in');
+  let delay = 0;
+
+  sections.forEach(section => {
+       setTimeout(() => {
+            section.classList.add('visible');
+       }, delay);
+      delay += 200; // Adjust the delay as needed
+   });
+
+});
