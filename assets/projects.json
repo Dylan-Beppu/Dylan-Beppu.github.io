@@ -16,7 +16,7 @@
   {
     "name": "Todo list web app",
     "image": "assets/img/portfolio/cabin.png",
-    "link": "https://github.com/Dylan-Beppu-SPU/List-app",
+    "link": "https://github.com/Dylan-Beppu/List-app",
     "sourceType": "github",
     "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
   },
