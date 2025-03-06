@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('assets/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+    /* src: url('assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');     */
+}
+
+:root {
+    --main-font-family: 'NotoSans', sans-serif;
+
+    /* Colors */
+    /* --primary-color: # */
+    --accent-color: #ff9d4c;
+
+    --text-color: #fafafa;
+    --text-select: #ffffff;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+/* h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font: optional;
+} */
+
+
+.inlineRblx {
+    width: 16px;
+    height: 16px;
+    vertical-align: -.125em;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 12.5px;
+    font-size: 16px;
+    color: white;
+    background-color: var(--accent-color);
+    border: 5px;
+    border-color: black;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+
+
+}
+
+.top-intro {
+    font-size: 50px;
+}
+
+
+#navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    /* right: 0; */
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.8); */
+    backdrop-filter: blur(10px);
+    /* padding: 10px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border-radius: 0 0 0 10px; */
+}
+
+#navbar p {
+    font-size: medium;
+    font-weight: normal;
+    margin-right: auto;
+    padding-left: 10px;
+    color: var(--text-color);
+
+}
+
+
+#navbar ul {
+    margin-left: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+#navbar ul li {
+    display: inline;
+    position: relative;
+}
+
+#navbar ul li:not(:last-child)::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    color: #333;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: normal;
+    font-size: medium;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition:  font-weight 0.3s, color 0.3s;
+    
+}
+
+#navbar ul li a:hover {
+    /* background-color: #007bff; */
+    /* font-size: large; */
+    font-weight:bold;
+    color: var(--text-select);
+}
+
+
+
+/* Page specific */
+
+#page-top {
+    margin: 0;
+}
+
+#topHalfHome {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Adjust the height as needed */
+    overflow: hidden;
+    background: linear-gradient(to bottom, 
+        rgb(0, 0, 0, 0) 85%, 
+        rgb(255, 255, 255)
+    );
+
+}
+
+
+
+#MySelf {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    color: white; /* Adjust the text color as needed */
+}
+
+.BackgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    z-index: -1; /* Place the image behind the content */
+}
+
+#pfpContainer {
+    flex: 0 0 35%; /* Takes up 30% of the width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    margin-right: 20px; /* Adjust the margin as needed */
+    /* height: 100%; */
+}
+
+.pfp-img {
+    aspect-ratio: 1 / 1;
+    width: 100%; /* Allow the image to scale with the container */
+    max-width: 50%; /* Scale to 50% of the container's width */
+    max-height: 80%; /* Scale to 80% of the container's height */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+}
+
+#NameCardSide {
+    display: flexbox;
+    text-align: left;
+    /* height: 100%; */
+}
+
+#page-bottom {
+    /* background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(196, 56, 56, 0)); Fade effect */
+    display: flex;
+    padding: 20px; /* Adjust padding as needed */
+}
+
+#left-side {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#right-side {
+    display: flex;
+    width: 60%;
+}
+
+#ContactsDiv {
+    justify-content: center;
+}
+
+#Btns {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+
+
+/* Media Rules */
+
+
+/* 
+@media (max-width: 950px) {
+    #page-bottom {
+        flex-direction: column;
+    }
+} */
