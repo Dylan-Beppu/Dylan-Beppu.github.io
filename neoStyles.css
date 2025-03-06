@@ -229,9 +229,28 @@ h2 {
 /* Media Rules */
 
 
-/* 
+
+@media (max-width: 600px) {
+ 
+    #navbar p {
+        visibility: hidden;
+        width: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #navbar ul {
+        justify-content: center; 
+        margin: auto;
+
+    }
+}
+
+
+/* Will eventualy sepperate these */
+
+
 @media (max-width: 950px) {
     #page-bottom {
         flex-direction: column;
     }
-} */
+}
