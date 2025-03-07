@@ -229,13 +229,14 @@ h2 {
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     margin-right: 20px; /* Adjust the margin as needed */
+    padding: 50px;
     /* height: 100%; */
 }
 
 .pfp-img {
     aspect-ratio: 1 / 1;
     width: 100%; /* Allow the image to scale with the container */
-    max-width: 60%; /* Scale to 50% of the container's width */
+    max-width: 100%; /* Scale to 50% of the container's width */
     max-height: 50%; /* Scale to 80% of the container's height */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover;
