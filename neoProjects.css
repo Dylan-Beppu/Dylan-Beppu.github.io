@@ -13,6 +13,9 @@
         var(--background)
     );
     font-size: 3rem;
+    /* font-size: 50px; */
+    
+    
 
 }
 
@@ -108,13 +111,18 @@
     background-color: #0056b3;
 }
 
-
+@media (max-width: 30cm) {
+    .page-header {
+        font-size: 4.5vw;
+    }
+}
 
 @media (max-width: 45cm) {
     #ProjectContainer {
         grid-template-columns: repeat(3, 1fr); 
 
     }
+    
 
 }
 
