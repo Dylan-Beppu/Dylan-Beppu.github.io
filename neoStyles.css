@@ -320,11 +320,23 @@ h2 {
         display: flex; /* Add this line to enable flexbox */
         max-width: 100%;
         justify-content: center;
-        align-items: center;
+        align-items: center;src: ;
+        gap: 10px;
 
     }
     #page-bottom{
-        
+        /* justify-content: center; */
+        align-items: center;
+    }
+    #left-side{
+        align-items: center;
+    }
+
+    #Rightside {
+        align-items: center;
+        justify-content: center;
+
+
     }
 
 }
