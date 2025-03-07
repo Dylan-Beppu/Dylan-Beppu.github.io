@@ -20,8 +20,9 @@
 
     --text-color: #f1f1f1;
     --text-select: #ffffff;
-
-    color: #492700;
+    
+    --text2-color: #492700;
+    color: var(--text2-color);
 
 
 
