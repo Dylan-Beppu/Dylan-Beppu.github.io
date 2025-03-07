@@ -140,6 +140,24 @@ h2 {
 }
 
 
+#bottom-ribbon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+
+}
+
+#bottom-ribbon-left {
+    margin-left: 10px;
+}
+
+#bottom-ribbon-right {
+    margin-right: 10px;
+}
+
+
 
 /* Page specific */
 
