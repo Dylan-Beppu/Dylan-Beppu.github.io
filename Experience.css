@@ -1,0 +1,40 @@
+#experence-container{
+    padding: 10px;
+}
+
+
+#SkillSet {
+
+}
+
+.SubSet{
+    background-color: antiquewhite;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+
+
+
+.horizontalList{
+    margin-left: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.horizontalList li {
+    display: inline;
+    position: relative;
+}
+
+.horizontalList li:not(:last-child)::after {
+    content: ' ';
+    position: absolute;
+    right: -10px;
+    /* color: #333; */
+}

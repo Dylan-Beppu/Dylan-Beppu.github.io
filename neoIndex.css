@@ -123,10 +123,10 @@
 
 }
 
-#right-side {
+/* #right-side { */
     /* display: flex; */
-    width: 60%;
-}
+    /* width: 60%; */
+/* } */
 
 #ContactsDiv {
     justify-content: center;

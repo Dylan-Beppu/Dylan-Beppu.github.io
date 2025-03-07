@@ -172,11 +172,31 @@ h2 {
     margin-right: 10px;
 }
 
-
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    padding: 20px; 
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(to bottom, 
+        rgb(0, 0, 0, 0) 85%, 
+        var(--background)
+    );
+    font-size: 3rem;
+    /* font-size: 50px; */
+}
 
 /* Media Rules */
 
-
+@media (max-width: 30cm) {
+    .page-header {
+        font-size: 4.5vw;
+    }
+}
 
 @media (max-width: 750px) {
  
