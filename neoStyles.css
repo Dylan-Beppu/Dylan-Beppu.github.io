@@ -9,10 +9,24 @@
 
     /* Colors */
     /* --primary-color: # */
-    --accent-color: #ff9d4c;
+    /* --background: #bf946b; */
+    /* --background: #f8dabe; */
+    --background: #f8dabe;
 
-    --text-color: #fafafa;
+
+    /* --accent-color: #ff9d4c; */
+    --accent-color: #da7d31;
+
+
+    --text-color: #f1f1f1;
     --text-select: #ffffff;
+
+    color: #492700;
+
+
+
+
+    background: var(--background);
 }
 
 body {
@@ -39,7 +53,7 @@ h2 {
     display: inline-block;
     padding: 10px 12.5px;
     font-size: 16px;
-    color: white;
+    color: var(--text-color);
     background-color: var(--accent-color);
     border: 5px;
     border-color: black;
@@ -47,11 +61,12 @@ h2 {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    text-wrap-mode:nowrap;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-
+    background-color: var(--accent-color);
 
 }
 
@@ -139,10 +154,11 @@ h2 {
     overflow: hidden;
     background: linear-gradient(to bottom, 
         rgb(0, 0, 0, 0) 85%, 
-        rgb(255, 255, 255)
+        var(--background)
     );
 
 }
+
 
 
 
@@ -152,10 +168,41 @@ h2 {
     height: 100%;
     display: flex;
     align-items: center;
+    /* flex-direction: column; */
+
     padding: 20px; /* Adjust padding as needed */
     box-sizing: border-box;
-    color: white; /* Adjust the text color as needed */
 }
+
+#NameCardSide {
+    /* margin: 0px; */
+}
+
+#NameCardSide h2{
+    color: var(--text-color);
+    font-weight:normal;
+    margin: 0px;
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+
+
+
+}
+
+#NameCardSide h1{
+    /* color: #492700d2; */
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 0px;
+    /* text-shadow: #000000 0px 5px 10px; */
+    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+
+
+    /* color: var(--accent-color); */
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+}
+
 
 .BackgroundImg {
     position: absolute;
@@ -179,10 +226,12 @@ h2 {
 .pfp-img {
     aspect-ratio: 1 / 1;
     width: 100%; /* Allow the image to scale with the container */
-    max-width: 50%; /* Scale to 50% of the container's width */
-    max-height: 80%; /* Scale to 80% of the container's height */
+    max-width: 60%; /* Scale to 50% of the container's width */
+    max-height: 50%; /* Scale to 80% of the container's height */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 #NameCardSide {
@@ -193,6 +242,7 @@ h2 {
 
 #page-bottom {
     /* background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(196, 56, 56, 0)); Fade effect */
+    background: var(--background);
     display: flex;
     padding: 20px; /* Adjust padding as needed */
 }
@@ -215,6 +265,8 @@ h2 {
 }
 
 #Btns {
+    /* display: flex; */
+    /* flex-direction: row; */
     margin-top: 2.5px;
     margin-bottom: 2.5px;
     margin-bottom: 20px;
@@ -230,7 +282,7 @@ h2 {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
  
     #navbar p {
         visibility: hidden;
@@ -249,8 +301,30 @@ h2 {
 /* Will eventualy sepperate these */
 
 
-@media (max-width: 950px) {
+@media (max-width: 750px) {
     #page-bottom {
         flex-direction: column;
     }
+    #MySelf {
+        flex-direction: column;
+    }
+    #pfpContainer{
+        /* flex: 0 0 80%;  */
+        display: flex;
+        /* justify-content: center;  */
+        /* align-items: center; */
+        max-height: 50%;
+        
+    }
+    #Btns {
+        display: flex; /* Add this line to enable flexbox */
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #page-bottom{
+        
+    }
+
 }
