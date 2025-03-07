@@ -8,11 +8,15 @@
     padding: 20px; 
     box-sizing: border-box;
     color: white;
+    background: linear-gradient(to bottom, 
+        rgb(0, 0, 0, 0) 85%, 
+        var(--background)
+    );
 }
 
 #ProjectContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     padding: 20px;
     background-color: var(--background);
@@ -96,4 +100,32 @@
 
 .btnInline:hover {
     background-color: #0056b3;
+}
+
+
+
+@media (max-width: 45cm) {
+    #ProjectContainer {
+        grid-template-columns: repeat(3, 1fr); 
+
+    }
+
+}
+
+
+@media (max-width: 30cm) {
+    #ProjectContainer {
+        grid-template-columns: repeat(2, 1fr); 
+
+    }
+
+}
+
+
+@media (max-width: 15cm) {
+    #ProjectContainer {
+        grid-template-columns: repeat(1, 1fr); 
+
+    }
+
 }
