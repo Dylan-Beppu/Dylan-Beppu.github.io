@@ -1,6 +1,8 @@
 
 .top-intro {
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 3.125rem;
+    
 }
 
 #page-top {
@@ -54,7 +56,9 @@
 
     font-size: 4vw;
     margin: 0px;
-    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    /* text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; */
+    text-shadow: #474747 3px 4px 2px;
+
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 
 
@@ -70,7 +74,9 @@
     font-size: 6vw;
     margin: 0px;
     /* text-shadow: #000000 0px 5px 10px; */
-    text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    /* text-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; */
+    text-shadow: #474747 3px 4px 2px;
+
 
 
     /* color: var(--accent-color); */
