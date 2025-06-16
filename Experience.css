@@ -38,3 +38,53 @@
     right: -10px;
     /* color: #333; */
 }
+
+
+#timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-item {
+    position: relative;
+    width: 200px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.timeline-item:nth-child(odd) {
+    transform: translateY(-30px);
+}
+
+.timeline-item:nth-child(even) {
+    transform: translateY(30px);
+}
+
+.timeline-year {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #ccc;
+    z-index: -1;
+}

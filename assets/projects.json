@@ -1,5 +1,19 @@
 [
   {
+    "name": "Minecraft shop script generator",
+    "image": "assets/img/Projects/Minecraft_shop_script_gen.png",
+    "link": "https://github.com/Dylan-Beppu/Minecraft-shop-script-generator",
+    "sourceType": "github",
+    "description": "A program to generate npc shop scripts to be used in a minecraft world based on a csv file."
+  },
+  {
+    "name": "WASH Shell",
+    "image": "assets/img/Projects/WASH_Shell.png",
+    "link": "https://github.com/Dylan-Beppu/WASH",
+    "sourceType": "github",
+    "description": "A shell program using POSIX in linux made for a class."
+  },
+  {
     "name": "Portfolio",
     "image": "assets/img/Projects/Portfolio.png",
     "link": "https://github.com/Dylan-Beppu/Dylan-Beppu.github.io",
