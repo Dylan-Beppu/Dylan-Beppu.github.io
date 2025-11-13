@@ -13,6 +13,7 @@
         <link href="GlobalStyle.css" rel="stylesheet" />
         <link href="neoIndex.css" rel="stylesheet" />
 		<link href="Experience.css" rel="stylesheet" />
+		<link href="neoProjects.css" rel="stylesheet" />
     </head>
     <body>
         
@@ -189,17 +190,37 @@
 			</div>
 		</div>
 
+
+		<div id="Projects">
+			<h1>Projects</h1>
+			<div id="ProjectContainer">
+				
+				<!-- Sample one -->
+				<div class="NeoProject" style="background-image: url('./assets/img/Projects/Prox-Prompt.png');">
+				
+					<a href="https://github.com/yourusername/your-repo" target="_blank" style="color: inherit; text-decoration: none;">
+						<div class="NeoProjectOverlay">
+							<h2>Prox-Prompt</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam distinctio! Amet tempora, mollitia quibusdam aliquid voluptatem perferendis</p>
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
        
 
 
-		
+
 
 		<nav id="NewNav">
 			<!-- <p>Dylan Beppu </p> -->
             <ul>
-                <li><a href="neoIndex.html" class="active">Home</a></li>
+                <li><a href="#topHalfHome" class="active">Home</a></li>
     			<li><a href="#experence">Experience</a></li>
-    			<li><a href="neoProjects.html">Projects</a></li>
+    			<li><a href="#ProjectContainer">Projects</a></li>
     			<div class="nav-indicator"></div>
             </ul>
 		</nav>
@@ -209,5 +230,6 @@
             <div class="bottom-ribbon-right">Hosted by Github pages</div>
         </div>
 		<script src="navScript.js"></script>
+		<script src="projectLoader.js"></script>
     </body>
 </html>
