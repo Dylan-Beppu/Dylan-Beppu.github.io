@@ -17,38 +17,34 @@
     </head>
     <body>
         
-        <div id="topHalfHome">
-            
-            <div id="MySelf">
-                <img class="BackgroundImg" src="assets/img/Background.JPG" alt="..." />
-                
-                <div id="pfpContainer">
-                    <img class="pfp-img" src="assets/img/Img.jpg" alt="..." />
-                </div>
+        <div id="home">
+			<!-- Namecard, photo, background image, socials -->
+			<div id="topHalfHome" style="background-image: url('./assets/img/Background.JPG');">
+		    	<div class="home-flex">
+        			<div class="home-left">
+			            <img src="./assets/img/Img.jpg" alt="Profile Photo" class="profile-photo" />
+        			</div>
+		 	    	<div class="home-right">
+        		    	<h1 class="top-intro">Aloha, I'm </h1>
+						<h1 class="top-intro">Dylan Beppu</h1>
+		            	<div class="social-buttons">
+        		        	<a href="https://github.com/yourusername" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+		                	<a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                			<!-- Add more socials as needed -->
+		            	</div>
+        			</div>
+		    	</div>
+			</div>
+				
 
-                <div id="NameCardSide">
-                    <h2 class="top-intro">Hello, I'm</h2>
-                    <h1 class="top-intro">&emsp;Dylan Beppu</h1>
-                </div>
-            </div>
 
-        </div>
-        <div id="page-bottom">
-            <div id="left-side">
-                <h2>Contacts</h2>
-                <div id = "Btns">
-                    <a href="https://www.linkedin.com/in/dylan-beppu/" class="btn"><i class="fab fa-fw fa-linkedin-in"></i> LinkedIn</a>
-                    <a href="https://github.com/Dylan-Beppu" class="btn"><i class="fab fa-brands fa-github"></i> GitHub</a>
-                    <a href="https://devforum.roblox.com/u/hawaiikaiboy02" class="btn"><img class= "inlineRblx" src="assets/img/rblxIcon.png"/> Developer account</a>
 
-                </div>
-            </div>
-            <div id="right-side">
-                <h2>About</h2>
-                <p>I am a third year computer science student at Seattle Pacific University. The last seven years of programming experience, stemming from my time in robotics to studying computer science, have fueled my goal of becoming a software engineer. I have strong problem solving and critical thinking skills that enable me to work effectively as part of a team and complete any project.</p>
+			</div>
+
+			<div id = "aboutMe">
+				<p>I am a fourth year computer science student at Seattle Pacific University. The last seven years of programming experience, stemming from my time in robotics to studying computer science, have fueled my goal of becoming a software engineer. I have strong problem solving and critical thinking skills that enable me to work effectively as part of a team and complete any project.</p>
                 <p>I found my calling to pursue computer science during my time on a robotics team. Through my personal projects with developing games and apps to other college projects, I find that computer science is the perfect fit for me. Computer science mixes two of my passions, computers and problem solving.</p>
-            </div>
-            
+			</div>
         </div>
 
 
@@ -194,9 +190,9 @@
 		<div id="Projects">
 			<h1>Projects</h1>
 			<div id="ProjectContainer">
-				
-				<!-- Sample one -->
-				<div class="NeoProject" style="background-image: url('./assets/img/Projects/Prox-Prompt.png');">
+
+
+				<!-- <div class="NeoProject" style="background-image: url('./assets/img/Projects/Prox-Prompt.png');">
 				
 					<a href="https://github.com/yourusername/your-repo" target="_blank" style="color: inherit; text-decoration: none;">
 						<div class="NeoProjectOverlay">
@@ -204,7 +200,7 @@
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam distinctio! Amet tempora, mollitia quibusdam aliquid voluptatem perferendis</p>
 						</div>
 					</a>
-				</div>
+				</div> -->
 
 
 			</div>
@@ -218,7 +214,7 @@
 		<nav id="NewNav">
 			<!-- <p>Dylan Beppu </p> -->
             <ul>
-                <li><a href="#topHalfHome" class="active">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
     			<li><a href="#experence">Experience</a></li>
     			<li><a href="#ProjectContainer">Projects</a></li>
     			<div class="nav-indicator"></div>
