@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Set initial position to active
-    const activeLink = nav.querySelector("a.active") || links[0];
+    let activeLink = nav.querySelector("a.active") || links[0];
     moveIndicator(activeLink);
 
     links.forEach(link => {
@@ -18,7 +18,38 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener("click", () => {
             links.forEach(l => l.classList.remove("active"));
             link.classList.add("active");
+            activeLink = link; // Update activeLink when clicked
             moveIndicator(link);
         });
+    });
+
+    // Auto-highlight nav link based on scroll position
+    const sectionIds = ["home", "aboutMe", "experence", "ProjectContainer"];
+    const sectionElements = sectionIds.map(id => document.getElementById(id));
+    const navLinks = Array.from(links);
+
+    const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5 // 50% of section visible
+    };
+
+    function onSectionIntersect(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => link.classList.remove("active"));
+                const foundActiveLink = navLinks.find(link => link.getAttribute("href") === `#${entry.target.id}`);
+                if (foundActiveLink) {
+                    foundActiveLink.classList.add("active");
+                    activeLink = foundActiveLink; // Update activeLink on scroll
+                    moveIndicator(foundActiveLink);
+                }
+            }
+        });
+    }
+
+    const observer = new IntersectionObserver(onSectionIntersect, observerOptions);
+    sectionElements.forEach(section => {
+        if (section) observer.observe(section);
     });
 });
