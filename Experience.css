@@ -5,10 +5,8 @@
 
 .skillContainer{
 	/* background-color: red; */
-}
-
-.skillContainer h1 {
-	text-align: center; /* Centers the text horizontally */
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
 
 .SubSet{
@@ -33,7 +31,7 @@
     align-items: center;
     gap: 15px;
     background-color: lightsalmon;  /* Temporary color for testing */
-    border-radius: 8px;
+    border-radius: 16px;
     padding: 10px;
     margin-bottom: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

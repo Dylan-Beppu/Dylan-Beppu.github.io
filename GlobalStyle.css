@@ -156,7 +156,7 @@ h2 {
 }
 
 
-#bottom-ribbon {
+/* #bottom-ribbon {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,7 +171,7 @@ h2 {
 
 #bottom-ribbon-right {
     margin-right: 10px;
-}
+} */
 
 #page-top{
     margin: 0px;
