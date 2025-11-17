@@ -15,8 +15,19 @@ document.addEventListener("DOMContentLoaded", function() {
     links.forEach(link => {
         link.addEventListener("mouseenter", () => moveIndicator(link));
         link.addEventListener("mouseleave", () => moveIndicator(activeLink));
-        link.addEventListener("click", () => {
-            links.forEach(l => l.classList.remove("active"));
+        link.addEventListener("click", function(e) {
+			e.preventDefault();
+			const href = link.getAttribute("href");
+			const target = document.querySelector(href);
+			if (target) {
+				let em = parseFloat(getComputedStyle(target).fontSize);
+                const yOffset = em * -5; // 2rem offset (assuming 1rem = 16px)
+                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: "smooth" });
+            }
+            
+			
+			links.forEach(l => l.classList.remove("active"));
             link.classList.add("active");
             activeLink = link; // Update activeLink when clicked
             moveIndicator(link);
@@ -24,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Auto-highlight nav link based on scroll position
-    const sectionIds = ["home", "aboutMe", "experence", "ProjectContainer"];
+    const sectionIds = ["home", "experence", "ProjectContainer"];
     const sectionElements = sectionIds.map(id => document.getElementById(id));
     const navLinks = Array.from(links);
 
