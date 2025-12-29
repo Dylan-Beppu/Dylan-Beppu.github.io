@@ -7,80 +7,273 @@
         <meta name="author" content="" />
         <title>Dylan Beppu Portfolio</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/fabIcons/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet" />
+        <link href="GlobalStyle.css" rel="stylesheet" />
+        <link href="Index.css" rel="stylesheet" />
+		<link href="Experience.css" rel="stylesheet" />
+		<link href="Projects.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
-        <div id="top-thing">
-            <div class="pfp fade-in">
-                <img class="pfp-img" src="assets/img/Img.jpg" alt="..." />
-            </div>
+    <body>
+        
+        <div id="home">
+			<!-- Namecard, photo, background image, socials -->
+			<div id="topHalfHome" style="background-image: url('./assets/img/Background.JPG');">
+		    	<div class="home-flex">
+        			<div class="home-left">
+			            <img src="./assets/img/Img.jpg" alt="Profile Photo" class="profile-photo" />
+        			</div>
+		 	    	<div class="home-right">
+        		    	<h1 class="top-intro">Aloha, I'm </h1>
+						<h1 class="top-intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dylan Beppu</h1>
+		            	<div class="social-buttons">
+        		        	<a href="https://github.com/dylan-beppu" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+		                	<a href="https://www.linkedin.com/in/dylan-beppu/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+							<a href="./assets/docs/Dylan_Beppu_Resume_public.pdf" target="_blank" class="social-btn"><i class="fa-solid fa-file"></i> Download Resume</a>
+                			<!-- Add more socials as needed -->
+		            	</div>
+        			</div>
+		    	</div>
+			</div>
+		</div>
 
-            <div id="AboutSplit">
-                <div class="top-split fade-in">
-                    <h2 class="top-intro">Hello, <span style="color: red;">I'm</span></h2>
-                    <h1 class="top-intro">&emsp;Dylan Beppu</h1>
-                </div>
-                <!-- TODO: fix the widths being weird, or widen it to fit -->
-                <div class="about-text fade-in">
-                    <p>I am a third year computer science student at Seattle Pacific University. The last seven years of programming experience, stemming from my time in robotics to studying computer science, have fueled my goal of becoming a software engineer. I have strong problem solving and critical thinking skills that enable me to work effectively as part of a team and complete any project.</p>
-                    <p>I found my calling to pursue computer science during my time on a robotics team. Through my personal projects with developing games and apps to other college projects, I find that computer science is the perfect fit for me. Computer science mixes two of my passions, computers and problem solving.</p>
-                </div>
-                <!-- Add rounded buttons -->
-                 <!-- <text>socials</text> -->
-                 <div class="Rounded-btns fade-in">
-                     <a href="https://www.linkedin.com/in/dylan-beppu/" class="btn"><i class="fab fa-fw fa-linkedin-in"></i> LinkedIn</a>
-                     <a href="https://github.com/Dylan-Beppu" class="btn"><i class="fab fa-brands fa-github"></i> GitHub</a>
-                     <a href="https://devforum.roblox.com/u/hawaiikaiboy02" class="btn"><img class= "inlineRblx" src="assets/img/rblxIcon.png"/> Developer account</a>
-                     <a href="neoIndex.html" class="btn">New Portfolio (In development)</a>
-
-                 </div>
-
-            </div>
-        </div>
-
-        <!-- put some divider thing here -->
-
-        <div class="divider fade-in">
-            <span>Skills</span>
-            <hr>
-        </div>
-
-         <div class="centred-container fade-in" id="skills-List">
-            <div class="Rounded-item"><text>I am a skill</text></div>
-         </div>
+		
+		<div id = "aboutMe" class="sectionTitle">
+			<h1>About Me</h1>
+			<p>I am a fourth year computer science student at Seattle Pacific University. The last seven years of programming experience, stemming from my time in robotics to studying computer science, have fueled my goal of becoming a software engineer. I have strong problem solving and critical thinking skills that enable me to work effectively as part of a team and complete any project.</p>
+			<p>I found my calling to pursue computer science during my time on a robotics team. Through my personal projects with developing games and apps to other college projects, I find that computer science is the perfect fit for me. Computer science mixes two of my passions, computers and problem solving.</p>
+			
+		
+		</div>
 
 
+		<div id="experience">
 
-        <div class="divider fade-in">
-            <span>Projects</span>
-            <hr>
-        </div>
+		<div class="skillContainer" id="Certifications">
+			
+			<h1 class="sectionTitle">Certifications</h1>
+
+			<div class="expList" id="certContainer">
+					
+				<div class="cert" id="MongoDBCert">
+					<img src="https://images.credly.com/images/6e32758f-6beb-44e5-ae9e-3ac8046f6290/image.png" alt="MongoDBCertification"/>
+					<div class="cert-text">
+						<h3>MongoDB Certified Developer</h3>
+						<p>Earned the MongoDB Developer Certification, demonstrating proficiency in MongoDB fundamentals, data modeling, and CRUD operations.</p>
+						<a class="btn" href="https://www.credly.com/badges/0a64b6fb-7751-4a10-90ce-86b932f9dfb8/embedded" target="_blank">Verify on Credly</a>
+							   
+						<div class="certSkills">
+							   <ul class="txt-list">
+								   <li>Data Modeling</li>
+								   <li>CRUD</li>
+								   <li>Aggregation Framework</li>
+								   <li>Indexing Strategies</li>
+								   <li>Performance Optimization</li>
+							   </ul>
+						</div>
+					</div>
+
+					   
+				</div>
+				
+				<!-- <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="0a64b6fb-7751-4a10-90ce-86b932f9dfb8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> -->
+
+			</div>
+			
+			
+			<div class="skillContainer" id="progLangContainer">
+				<h1 class="sectionTitle">Languages</h1>
+
+				<div class="expList" id="progLangList">
+
+					<!-- C++ -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+						<h4>C++</h4>
+					</div>
+
+					<!-- Java -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+						<h4>Java</h4>
+					</div>
+
+					<!-- Python -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+						<h4>Python</h4>
+					</div>
+
+					<!-- Lua -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg" />
+						<h4>Lua</h4>
+					</div>
+
+					<!-- Go -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+						<h4>Go</h4>
+					</div>
+
+					<!-- Rust -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" />
+						<h4>Rust</h4>
+					</div>
+
+					<!-- C -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" />
+						<h4>C</h4>
+					</div>
+
+					<!-- JavaScript -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+						<h4>JavaScript</h4>
+					</div>
+
+				</div>
+			</div>
 
 
- <!-- TODO: fix the widths being weird, or widen it to fit -->
-        <!-- auto populate this  -->
-        <div class="centred-container fade-in" id="projects-List"></div>
-      
-        <div class="bottom-bar ">
-            <!-- <text>Bottom bar stuffs</text> -->
-            <div class="bottom-frame">
-                <div class="bottom-bar-left">
-                    <p>Contact info:</p>
-                    <p>dbeppu.hi@gmail.com</p>
-                    <p>linkedin.com/in/dylan-beppu</p>
-                </div>
-                <div class="bottom-bar-right">
-                    <p>Made by Dylan Beppu</p>
-                    <p>Hosted using github pages</p>
-                    <p><a href="https://github.com/Dylan-Beppu/Dylan-Beppu.github.io">https://github.com/Dylan-Beppu/Dylan-Beppu.github.io</a></p>
-                </div>
-            </div>
-        </div>
+			<div class="skillContainer" id="techSkillsContainer">
+				<h1 class="sectionTitle">Tools</h1>
 
-        <!-- Load the auto gen script here -->
-        <script src="script.js"></script>
+				<div class="expList" id="progLangList">
+				
+					<!-- Git -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+						<h4>Git</h4>
+					</div>
+
+					<!-- GitHub -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+						<h4>GitHub</h4>
+					</div>
+			
+					<!-- VS Code -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+						<h4>VS Code</h4>
+					</div>
+
+					<!-- Docker -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+						<h4>Docker</h4>
+					</div>
+
+					<!-- Ubuntu -->
+					<div class="progLang">
+            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg" />
+						<h4>Ubuntu</h4>
+					</div>
+
+					<!-- React native -->
+					<div class="progLang">
+            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" />
+						<h4>React native</h4>
+					</div>
+
+					<!-- MongoDB -->
+					<div class="progLang">
+            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+						<h4>MongoDB</h4>
+					</div>
+
+					<!-- Android Studio -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" />
+						<h4>Android Studio</h4>
+					</div>
+
+					<!-- Jira -->
+					<div class="progLang">
+            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg" />          
+						<h4>Jira</h4>
+					</div>
+
+					<!-- Trello -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/trello/trello-original.svg" />
+						<h4>Trello</h4>
+					</div>
+
+					<!-- Figma -->
+					<div class="progLang">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
+						<h4>Figma</h4>
+					</div>
+
+					<!-- Blender -->
+					<div class="progLang">						
+            			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blender/blender-original.svg" />
+						<h4>Blender</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="skillContainer" id="Projects">
+			<h1 class="sectionTitle">Projects</h1>
+			<div id="ProjectContainer">
+
+				<!-- TODO: add zenless-impact-graph project here and get photos fixed -->
+				<!-- Projects loaded by projectLoader.js -->
+				
+			</div>
+		</div>
+
+       
+
+		<div id="bottomRibbon" >
+			
+			<div id="topBottomRibbon">
+
+				<div id="bottomBarPFPContainer">
+					<img src="./assets/img/Img.jpg" alt="Profile Photo" id="bottomBarPFP" />
+				</div>
+
+				<div id="bottomBarInfo">
+					<h3>Dylan Beppu</h3>
+					<h3>dbeppu.hi@gmail.com</h3>
+					<div class = "social-buttons">
+				<a href="https://github.com/dylan-beppu" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+		        <a href="https://www.linkedin.com/in/dylan-beppu/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+
+			</div>
+				</div>
+			</div>
+
+			
+
+			<div id="bottomRunner">
+				<p>Hosted on github pages</p>
+			</div>
+
+		</div>
+
+
+
+
+		<nav id="NewNav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+    			<li><a href="#experience">Experience</a></li>
+    			<li><a href="#ProjectContainer">Projects</a></li>
+    			<div class="nav-indicator"></div>
+            </ul>
+		</nav>
+
+
+
+		<script src="navScript.js"></script>
+		<script src="projectLoader.js"></script>
     </body>
 </html>

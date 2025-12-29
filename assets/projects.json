@@ -1,65 +1,66 @@
 [
   {
-    "name": "Minecraft shop script generator",
-    "image": "assets/img/Projects/Minecraft_shop_script_gen.png",
-    "link": "https://github.com/Dylan-Beppu/Minecraft-shop-script-generator",
-    "sourceType": "github",
-    "description": "A program to generate npc shop scripts to be used in a minecraft world based on a csv file."
-  },
-  {
     "name": "WASH Shell",
     "image": "assets/img/Projects/WASH_Shell.png",
     "link": "https://github.com/Dylan-Beppu/WASH",
     "sourceType": "github",
-    "description": "A shell program using POSIX in linux made for a class."
+    "description": "WASH is a custom Unix-like command-line shell that interprets and executes user input in a Linux environment. It supports built-in commands such as directory navigation and help, executes external programs, and includes basic utilities for command output handling. The project was designed to replicate core shell behavior while emphasizing correctness, usability, and modular structure.",
+	"skills": ["C", "POSIX", "Linux"]
   },
   {
     "name": "Portfolio",
     "image": "assets/img/Projects/Portfolio.png",
     "link": "https://github.com/Dylan-Beppu/Dylan-Beppu.github.io",
     "sourceType": "github",
-    "description": "This website, my personal portfolio."
+    "description": "This website, my personal portfolio. This site is built using HTML, CSS, and JavaScript to showcase my projects, skills, and experience in a clean and responsive design.",
+	"skills": ["HTML", "CSS", "JavaScript", "Web Development"]
   },
   {
     "name": "Hanafuda Rust Game",
     "image": "assets/img/Projects/Hanafuda.png",
     "link": "https://github.com/Dylan-Beppu/Hanafuda-Rust-Game",
     "sourceType": "github",
-    "description": "Hawaiian Style Hanafuda is a variation of the traditional Japanese Hanafuda card game. This project is implemented in Rust using the ncurses library for graphical display. This is the public release of the project done as a term project."
+    "description": "This project is the terminal-based implementation of Hawaiian-style Hanafuda, a  variation of the traditional japanese card game, Hanafuda. Built in Rust, the project recreates the full card-play experience with shuffled dealing, player and CPU turns, card matching, and scoring, all presented through a text interface. It faithfully models game rules and card mechanics, offering a playable version of this classic card game in a console environment. This is the public release of the project done as a term project.",
+	"skills": ["Rust", "ncurses", "Game Development"]
   },
   {
-    "name": "Todo list mobile app",
-    "image": "assets/img/Projects/ToDo-App.png",
-    "link": "https://github.com/Dylan-Beppu/ToDo-App",
-    "sourceType": "github",
-    "description": "A mobile todo list app using a react native framework with a sqlite database. Made as a test to play around with react native."
-  },
-  {
-    "name": "Todo list web app",
-    "image": "assets/img/Projects/ToDo-Web.png",
-    "link": "https://github.com/Dylan-Beppu/List-app",
-    "sourceType": "github",
-    "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
+	"name": "GO parser",
+	"image": "temp",
+	"link": "https://github.com/Dylan-Beppu/go-parser-Dylan-Beppu-SPU",
+	"sourceType": "github",
+	"description": "A parser that takes a program written in a custom 4point language and outlets it to scheme or prolog. This consists of a lexer, parser, and code generator with support for error checking and hanging. This was made as a term project for a concepts in programming class. (private until readme is redone)",
+	"skills": ["GO", "Lexing", "Parsing", "Compiler Design",  "Scheme", "Prolog"]
   },
   {
     "name": "T.A.P Roblox plugin",
     "image": "assets/img/Projects/tappag.png",
     "link": "https://devforum.roblox.com/t/tap-terrain-angle-painter/2521847",
     "sourceType": "roblox",
-    "description": "A Roblox plugin that changes terrain material based on angle. Has a fully customizable rule set and support for a user set seed for randomizer."
+    "description": "T.A.P. (Terrain Angle Painter) is a Roblox Studio plugin that automatically adjusts terrain materials based on surface angle, making it easy to detail and refine large landscapes without manual painting. Designed to speed up terrain workflows, the tool lets creators define custom settings and quickly apply material changes across complex terrain surfaces, improving efficiency and visual consistency in world building.  Additionally, it uses procedural generation techniques such as perlin noise to generate terrain variations.",
+	"skills": ["Lua", "Procedural generation","Roblox Studio", "Plugin Development"]
   },
   {
     "name": "proximity prompt v2",
     "image": "assets/img/Projects/Prox-Prompt.png",
     "link": "https://devforum.roblox.com/t/custom-proximity-prompt-v2/1609158",
     "sourceType": "roblox",
-    "description": "A graphical solution to modify proximity prompts in Roblox. Supports being a drop-in replacement, graphical modifiable,and modeler to be fully customized"
+    "description": "Custom Proximity Prompt V2 is an enhanced community resource for Roblox developers that replaces the default proximity interaction UI with a fully customizable prompt system that is easily modifiable graphically. It uses Roblox Studio's UI tools to let creators tailor how interaction prompts look and behave—including new press and hold animations, dynamic input icons based on device type, and optional audio effects—making in-game interactions more polished and personalized.",
+	"skills": ["Lua", "UI design", "Roblox Studio", "Utility Development"]
+  },
+  {
+    "name": "Minecraft shop script generator",
+    "image": "assets/img/Projects/Minecraft_shop_script_gen.png",
+    "link": "https://github.com/Dylan-Beppu/Minecraft-shop-script-generator",
+    "sourceType": "github",
+    "description": "Minecraft Shop Script Generator is a command-line tool that automatically creates NPC shop scripts for Minecraft servers based on CSV input. Inspired by tutorial systems for scoreboard-based shops and NPC interactions, the program reads item data and pricing information to generate ready-to-use script files, simplifying the otherwise repetitive task of writing shop logic by hand.",
+	"skills": ["C++"]
   },
   {
     "name": "FRC 2020 Team 4270",
     "image": "assets/img/Projects/2020bot.png",
     "link": "https://github.com/Dylan-Beppu/4270FRC2020",
     "sourceType": "github",
-    "description": "All the code from the 2020 frc robotics game Infinite Recharge. The software I developed to mix autonomous and manual control won the innovation in control award for the FRC Canada-Pacific reginal competition that year."
+    "description": "This is the source code repository for Team 4270's 2020 FIRST Robotics Competition season (“Infinite Recharge”). It includes robot control software used at the Canada Pacific and Hawaii regional events, featuring autonomous targeting with Limelight vision tracking and configurable control mappings. The repo captures iterative development and competition-ready code for a real-world robotics platform. Additionally, this code won the innovation in control award at the Canada-Pacific regional. This seasons code was written by me as the lead programmer for the team.",
+	"skills": ["Java", "Robotics", "Networking", "Vision Processing", "OpenCV2", "Automation"]
   }
 ]

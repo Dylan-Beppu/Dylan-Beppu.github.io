@@ -3,13 +3,7 @@
 }
 
 
-.skillContainer{
-	/* background-color: red; */
-}
 
-.skillContainer h1 {
-	text-align: center; /* Centers the text horizontally */
-}
 
 .SubSet{
     background-color: antiquewhite;
@@ -32,8 +26,8 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    background-color: lightsalmon;  /* Temporary color for testing */
-    border-radius: 8px;
+    background-color: var(--highlight-color); 
+    border-radius: 16px;
     padding: 10px;
     margin-bottom: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -49,4 +43,43 @@
     height: 50px;
     object-fit: contain;
     border-radius: 5px;
+}
+
+
+
+.cert {
+	display: flex;
+	background-color: var(--foreground);
+	width: 100%;
+	border-radius: 16px;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.cert-text {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.cert-text h3 {
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.cert-text .btn{
+	margin-right: 1rem;
+}
+
+.cert img {
+	width: 20%;
+	min-width: 10rem;
+	height: auto;
+	object-fit: contain;
+	border-radius: 16px;
+}
+.certSkills {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }

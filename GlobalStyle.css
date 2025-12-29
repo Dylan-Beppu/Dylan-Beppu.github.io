@@ -11,16 +11,29 @@
     /* --primary-color: # */
     /* --background: #bf946b; */
     /* --background: #f8dabe; */
-    --background: #f8dabe;
+    /* --background: #f8dabe; */
+	/* --background: #9ebdea; */
+	--background: #dcd2bd;
+	/* --background: hsl(30, 30%, 80%); */
 
 
+	--foreground: #ffe4c4;
+
+
+	--highlight-color: #ffb085;
     /* --accent-color: #ff9d4c; */
-    --accent-color: #da7d31;
+    --accent-color: #cc916b;
+	/* --accent-color: #6f5c4a; */
 
+
+	--accent2-color: #8c6b51;
+
+	/* --btn-color: #cc916b; */
 
     --text-color: #f1f1f1;
     --text-select: #ffffff;
-    
+
+	
     --text2-color: #492700;
     color: var(--text2-color);
 
@@ -155,7 +168,7 @@ h2 {
 }
 
 
-#bottom-ribbon {
+/* #bottom-ribbon {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,7 +183,7 @@ h2 {
 
 #bottom-ribbon-right {
     margin-right: 10px;
-}
+} */
 
 #page-top{
     margin: 0px;
