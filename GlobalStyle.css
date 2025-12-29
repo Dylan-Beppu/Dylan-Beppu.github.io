@@ -17,8 +17,10 @@
 	/* --background: hsl(30, 30%, 80%); */
 
 
-	--foreground: #efb14f;
+	--foreground: #ffe4c4;
 
+
+	--highlight-color: #ffb085;
     /* --accent-color: #ff9d4c; */
     --accent-color: #cc916b;
 	/* --accent-color: #6f5c4a; */
@@ -26,10 +28,12 @@
 
 	--accent2-color: #8c6b51;
 
+	/* --btn-color: #cc916b; */
 
     --text-color: #f1f1f1;
     --text-select: #ffffff;
-    
+
+	
     --text2-color: #492700;
     color: var(--text2-color);
 

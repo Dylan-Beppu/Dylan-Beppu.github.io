@@ -126,7 +126,7 @@ body {
 
 /* Bottom stuff */
 #bottomRibbon {
-	background-color: blue;
+	background-color: var(--foreground);
 	border-radius: 16px;
 	/* margin: 5rem; */
 	margin-left: 5rem;
@@ -144,7 +144,7 @@ body {
 	aspect-ratio: 1/1;
 	/* object-fit: cover; */
 	height: auto;
-	width: 15%;
+	width: 10rem;
 }
 
 #bottomBarPFP {
@@ -297,8 +297,8 @@ body {
 	}
 
 	#bottomBarPFPContainer img {
-		width: 0%;
-		display: none;
+		/* width: 0%; */
+		/* display: none; */
 		height: auto;
 	}
 }
