@@ -1,12 +1,5 @@
 [
   {
-    "name": "Minecraft shop script generator",
-    "image": "assets/img/Projects/Minecraft_shop_script_gen.png",
-    "link": "https://github.com/Dylan-Beppu/Minecraft-shop-script-generator",
-    "sourceType": "github",
-    "description": "A program to generate npc shop scripts to be used in a minecraft world based on a csv file."
-  },
-  {
     "name": "WASH Shell",
     "image": "assets/img/Projects/WASH_Shell.png",
     "link": "https://github.com/Dylan-Beppu/WASH",
@@ -28,20 +21,6 @@
     "description": "Hawaiian Style Hanafuda is a variation of the traditional Japanese Hanafuda card game. This project is implemented in Rust using the ncurses library for graphical display. This is the public release of the project done as a term project."
   },
   {
-    "name": "Todo list mobile app",
-    "image": "assets/img/Projects/ToDo-App.png",
-    "link": "https://github.com/Dylan-Beppu/ToDo-App",
-    "sourceType": "github",
-    "description": "A mobile todo list app using a react native framework with a sqlite database. Made as a test to play around with react native."
-  },
-  {
-    "name": "Todo list web app",
-    "image": "assets/img/Projects/ToDo-Web.png",
-    "link": "https://github.com/Dylan-Beppu/List-app",
-    "sourceType": "github",
-    "description": "A fullstack todo list web app using a express tech stack with mongodb for the backend, and a custom designed front end."
-  },
-  {
     "name": "T.A.P Roblox plugin",
     "image": "assets/img/Projects/tappag.png",
     "link": "https://devforum.roblox.com/t/tap-terrain-angle-painter/2521847",
@@ -54,6 +33,13 @@
     "link": "https://devforum.roblox.com/t/custom-proximity-prompt-v2/1609158",
     "sourceType": "roblox",
     "description": "A graphical solution to modify proximity prompts in Roblox. Supports being a drop-in replacement, graphical modifiable,and modeler to be fully customized"
+  },
+  {
+    "name": "Minecraft shop script generator",
+    "image": "assets/img/Projects/Minecraft_shop_script_gen.png",
+    "link": "https://github.com/Dylan-Beppu/Minecraft-shop-script-generator",
+    "sourceType": "github",
+    "description": "A program to generate npc shop scripts to be used in a minecraft world based on a csv file."
   },
   {
     "name": "FRC 2020 Team 4270",

@@ -30,7 +30,7 @@
     display: inline-flex;
     align-items: center;
     gap: 15px;
-    background-color: lightsalmon;  /* Temporary color for testing */
+    background-color: var(--foreground);  /* Temporary color for testing */
     border-radius: 16px;
     padding: 10px;
     margin-bottom: 15px;
@@ -51,61 +51,29 @@
 
 
 
-
-
-/* nav bar stuff, will change the main */
-
-#NewNav {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    top: 20px; /* Add some space from top */
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    border-radius: 50px; /* Pill shape */
-    /* padding: 10px 30px; */
-	padding: 1rem;
-	padding-left: 0;
-	padding-right: 0;
-    z-index: 1000;
+.cert {
+	display: flex;
+	background-color: var(--foreground);
+	width: 100%;
+	border-radius: 16px;
+	align-items: center;
+	gap: 1.5rem;
 }
 
-#NewNav ul {
-    display: flex;
-    /* gap: 15px; */
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.cert-text {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-#NewNav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: medium;
-    padding: 8px 20px;
-    border-radius: 30px;
-    transition: background 0.3s, color 0.3s;
+.cert img {
+	width: 20%;
+	min-width: 10rem;
+	height: auto;
+	object-fit: contain;
+	border-radius: 16px;
 }
 
-/*  */
 
 
-
-.nav-indicator {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100px;
-    background: #ffb085;
-    border-radius: 30px;
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    z-index: -1;
-    pointer-events: none;
-}
 

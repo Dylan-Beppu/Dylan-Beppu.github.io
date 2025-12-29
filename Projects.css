@@ -2,7 +2,7 @@
 
 #ProjectContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     padding: 20px;
 	padding-left: 5rem;
@@ -30,6 +30,13 @@
 
 
 .NeoProject h2 {
+	/* text-decoration-color: blueviolet; */
+	/* text-indent: 5px; */
+	/* TODO: figure out how to do a text boarder */
+	color: #ffffff;
+	text-shadow:1rem;
+	text-decoration-color: black;
+	/* text- */
 	text-align: center;
 	margin: 0px;
 	margin-bottom: 0;
@@ -45,6 +52,23 @@
 	padding-right: 1rem;
 }
 
+.txt-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	gap: 15px;
+
+	
+}
+
+.txt-list li {
+	background-color: var(--accent2-color);
+	color: var(--text-color);
+	border-radius: 5rem;
+	padding: 0.5rem 1rem;
+}
 
 .NeoProjectOverlay {
 	/* display: inline-flexbox; */
@@ -114,9 +138,9 @@
 
 
 
-@media (max-width: 45cm) {
+@media (max-width: 35cm) {
     #ProjectContainer {
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(2, 1fr); 
 
     }
     
@@ -124,16 +148,7 @@
 }
 
 
-@media (max-width: 30cm) {
-    #ProjectContainer {
-        grid-template-columns: repeat(2, 1fr); 
-
-    }
-
-}
-
-
-@media (max-width: 15cm) {
+@media (max-width: 22cm) {
     #ProjectContainer {
         grid-template-columns: repeat(1, 1fr); 
 
