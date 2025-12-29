@@ -3,11 +3,7 @@
 }
 
 
-.skillContainer{
-	/* background-color: red; */
-	margin-left: 5rem;
-	margin-right: 5rem;
-}
+
 
 .SubSet{
     background-color: antiquewhite;
@@ -66,6 +62,15 @@
 	width: 100%;
 }
 
+.cert-text h3 {
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+.cert-text .btn{
+	margin-right: 1rem;
+}
+
 .cert img {
 	width: 20%;
 	min-width: 10rem;
@@ -73,7 +78,8 @@
 	object-fit: contain;
 	border-radius: 16px;
 }
-
-
-
-
+.certSkills {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
+}

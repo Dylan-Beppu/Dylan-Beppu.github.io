@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Dylan Beppu Portfolio</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/fabIcons/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="GlobalStyle.css" rel="stylesheet" />
@@ -30,6 +30,7 @@
 		            	<div class="social-buttons">
         		        	<a href="https://github.com/dylan-beppu" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
 		                	<a href="https://www.linkedin.com/in/dylan-beppu/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+							<a href="./assets/docs/Dylan_Beppu_Resume_public.pdf" target="_blank" class="social-btn"><i class="fa-solid fa-file"></i> Download Resume</a>
                 			<!-- Add more socials as needed -->
 		            	</div>
         			</div>
@@ -43,14 +44,11 @@
 			<p>I am a fourth year computer science student at Seattle Pacific University. The last seven years of programming experience, stemming from my time in robotics to studying computer science, have fueled my goal of becoming a software engineer. I have strong problem solving and critical thinking skills that enable me to work effectively as part of a team and complete any project.</p>
 			<p>I found my calling to pursue computer science during my time on a robotics team. Through my personal projects with developing games and apps to other college projects, I find that computer science is the perfect fit for me. Computer science mixes two of my passions, computers and problem solving.</p>
 			
-			<div id="downloadContainer">
-				<!-- TODO: Add resume download -->
-				<a href="" id= "downloadBtn" download>Download resume</a>
-			</div>
+		
 		</div>
 
 
-		<div id="experence">
+		<div id="experience">
 
 		<div class="skillContainer" id="Certifications">
 			
@@ -65,7 +63,7 @@
 						<p>Earned the MongoDB Developer Certification, demonstrating proficiency in MongoDB fundamentals, data modeling, and CRUD operations.</p>
 						<a class="btn" href="https://www.credly.com/badges/0a64b6fb-7751-4a10-90ce-86b932f9dfb8/embedded" target="_blank">Verify on Credly</a>
 							   
-						<div id="mongoSkills">
+						<div class="certSkills">
 							   <ul class="txt-list">
 								   <li>Data Modeling</li>
 								   <li>CRUD</li>
@@ -222,20 +220,39 @@
 		</div>
 
 
-		<div id="Projects">
+		<div class="skillContainer" id="Projects">
 			<h1 class="sectionTitle">Projects</h1>
 			<div id="ProjectContainer">
 
 
-				<!-- <div class="NeoProject" style="background-image: url('./assets/img/Projects/Prox-Prompt.png');">
-				
-					<a href="https://github.com/yourusername/your-repo" target="_blank" style="color: inherit; text-decoration: none;">
-						<div class="NeoProjectOverlay">
+
+<!-- 
+				<div class="project" id="projectName">
+					<img src="./assets/img/Projects/Prox-Prompt.png" alt="Prox-Prompt Project Image" />
+					<div class="project-text">
+						<div class="upper-project-text">
 							<h2>Prox-Prompt</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, ipsam distinctio! Amet tempora, mollitia quibusdam aliquid voluptatem perferendis</p>
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente quod deserunt aliquam quia, quos quam officia illo perspiciatis vel, sunt officiis praesentium dolor rem vitae cumque eligendi alias tempora quasi?</p>
 						</div>
-					</a>
+
+						<div class="lower-project-text">
+							<a class="btn" href="https://github.com/yourusername/your-repo" target="_blank">View on GitHub</a>
+							<div class="certSkills">
+								<ul class="txt-list">
+									<li>Data Modeling</li>
+									<li>CRUD</li>
+								</ul>
+							</div>
+						</div>
+
+					</div>
 				</div> -->
+
+
+
+				
+			
+
 
 
 			</div>
@@ -276,7 +293,7 @@
 			<!-- <p>Dylan Beppu </p> -->
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
-    			<li><a href="#experence">Experience</a></li>
+    			<li><a href="#experience">Experience</a></li>
     			<li><a href="#ProjectContainer">Projects</a></li>
     			<div class="nav-indicator"></div>
             </ul>

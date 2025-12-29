@@ -20,16 +20,27 @@
 
 
 function generateHTML(projects) {
-    return projects.map(project => `
-		<div class="NeoProject" id=${project.name} style="background-image: url('${project.image}');">	
-			<a href="${project.link}" target="_blank" style="color: inherit; text-decoration: none;">
-				<div class="NeoProjectOverlay">
+	return projects.map(project => `
+		<div class="project" id="${project.name}">
+			<img src="${project.image}" alt="${project.name} Project Image" />
+			<div class="project-text">
+				<div class="upper-project-text">
 					<h2>${project.name}</h2>
 					<p>${project.description}</p>
 				</div>
-			</a>
+				<div class="lower-project-text">
+					<a class="btn" href="${project.link}" target="_blank">
+						View on ${project.sourceType.charAt(0).toUpperCase() + project.sourceType.slice(1)}
+					</a>
+					<div class="certSkills">
+						<ul class="txt-list">
+							${project.skills.map(skill => `<li>${skill}</li>`).join('')}
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-    `).join('');
+	`).join('');
 }
 
 

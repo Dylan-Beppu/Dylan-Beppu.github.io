@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Auto-highlight nav link based on scroll position
-    const sectionIds = ["home", "experence", "ProjectContainer"];
+    const sectionIds = ["home", "experience", "ProjectContainer"];
     const sectionElements = sectionIds.map(id => document.getElementById(id));
     const navLinks = Array.from(links);
 

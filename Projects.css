@@ -2,145 +2,58 @@
 
 #ProjectContainer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     gap: 20px;
-    padding: 20px;
-	padding-left: 5rem;
-	padding-right: 5rem;
+    /* padding: 20px; */
+	row-gap: 1rem;
+	column-gap: 1rem;
+	
 
+	padding-bottom: 1rem;
     background-color: var(--background);
     align-items: start;
 }
 
-
-
-.NeoProject {    
-    background-size: contain; 
-    background-position: center; 
-	/* background-repeat: no-repeat; */
-	width: 100%; /* Optional: Let the width adjust automatically */
-	/* padding: 10px; */
-	position: relative;
-	overflow: hidden;
-	aspect-ratio: 18/13;
-	border-radius: 16px;
-	padding: 0px;
-	margin: 0px;
-}
-
-
-.NeoProject h2 {
-	/* text-decoration-color: blueviolet; */
-	/* text-indent: 5px; */
-	/* TODO: figure out how to do a text boarder */
-	color: #ffffff;
-	text-shadow:1rem;
-	text-decoration-color: black;
-	/* text- */
-	text-align: center;
-	margin: 0px;
-	margin-bottom: 0;
-    transition: margin-bottom 0.3s cubic-bezier(.4,2,.3,1), transform 0.3s cubic-bezier(.4,2,.3,1);
-    transform: translateY(0);
-}
-
-
-.NeoProject p {
-	/* visibility: hidden; */
-	display: none;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-.txt-list {
+.project {
 	display: flex;
-	flex-wrap: wrap;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	gap: 15px;
+	width: 100%;
+	flex-direction: row;
+	background-color: bisque;
+	border-radius: 16px;
+	height: 100%;
 
-	
 }
 
-.txt-list li {
-	background-color: var(--accent2-color);
-	color: var(--text-color);
-	border-radius: 5rem;
-	padding: 0.5rem 1rem;
+.project img {
+	width: 50%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 16px;
+	/* margin-right: 20px; */
 }
 
-.NeoProjectOverlay {
-	/* display: inline-flexbox; */
-	border-radius: 8px;
-	width: calc(100% - 2rem);
-	background-color: hsla(201, 100%, 56%, 0);
-	/* background-color: hsl(201, 100%, 56%); */
-	padding: 0px;
+
+.project-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;		
+	width: 50%;
 	margin: 1rem;
-	position: absolute;
-	bottom: 0;
-}
-
-
-@keyframes flyIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes flyOut {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-}
-
-
-.NeoProject:hover .NeoProjectOverlay{
-    background-color: hsla(201, 100%, 56%, 0.737);
-	animation: flyIn 0.3s ease-out;
 
 }
 
-/* .NeoProject:hover h2{
-	animation: flyIn 0.3s ease-out;
-} */
-
-.NeoProject:hover .NeoProjectOverlay h2 {
-    margin-bottom: 1px;
-    transform: translateY(0px);
-	text-decoration: underline;
-}
-
-.NeoProject:hover p{
-    display: block; /* Make the paragraph visible */
-	animation: flyIn 0.3s ease-out;
-}
-
-.NeoProject:not(:hover) .NeoProjectOverlay h2 {
-    margin-bottom: 0;
-    transform: translateY(0);
+.lower-project-text{
+	padding-bottom: 1rem;
 }
 
 
 
 
 
-
-
-@media (max-width: 35cm) {
+@media (max-width: 55cm) {
     #ProjectContainer {
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(1, 1fr); 
 
     }
     
@@ -148,10 +61,32 @@
 }
 
 
-@media (max-width: 22cm) {
-    #ProjectContainer {
-        grid-template-columns: repeat(1, 1fr); 
 
-    }
+/* Reorganize element for vertical view */
+@media (max-width: 875px) {
+	.project {
+		flex-direction: column;
+	}
 
+	.project img {
+		width: 100%;
+		height: auto;
+		/* margin-right: 0; */
+	}
+
+	.project-text {
+		width: auto;
+		height: auto;
+		justify-content: flex-start;
+		/* margin: 1rem; */
+	}
+
+
+	.lower-project-text{
+		padding-bottom: 0rem;
+	}
+
+	.lower-project-text .certSkills{
+		margin-bottom: 0rem;
+	}
 }
