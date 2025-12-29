@@ -54,6 +54,8 @@
 	border-radius: 16px;
 	align-items: center;
 	gap: 1.5rem;
+	padding: 1rem;
+
 }
 
 .cert-text {
@@ -67,9 +69,6 @@
 	margin-bottom: 0.5rem;
 }
 
-.cert-text .btn{
-	margin-right: 1rem;
-}
 
 .cert img {
 	width: 20%;
@@ -82,4 +81,18 @@
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	/* margin-bottom: 1rem; */
+}
+
+
+@media (max-width: 950px) {
+	.cert {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		/* padding: 1rem; */
+	}
+
+	.cert .certSkills {
+		margin-bottom: 0px;
+	}
 }

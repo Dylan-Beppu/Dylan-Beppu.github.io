@@ -45,7 +45,7 @@ body {
     border-radius: 50%;
 	aspect-ratio: 1/1;
     object-fit: cover;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 24px rgba(0,0,0,0.2); */
 }
 
 .home-right {
@@ -300,5 +300,9 @@ body {
 		/* width: 0%; */
 		/* display: none; */
 		height: auto;
+	}
+
+	.social-buttons {
+		justify-content: center;
 	}
 }
