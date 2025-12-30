@@ -1,7 +1,7 @@
 [
   {
     "name": "WASH Shell",
-    "image": "assets/img/Projects/WASH_Shell.png",
+    "image": "assets/img/Projects/WASH.png",
     "link": "https://github.com/Dylan-Beppu/WASH",
     "sourceType": "github",
     "description": "WASH is a custom Unix-like command-line shell that interprets and executes user input in a Linux environment. It supports built-in commands such as directory navigation and help, executes external programs, and includes basic utilities for command output handling. The project was designed to replicate core shell behavior while emphasizing correctness, usability, and modular structure.",
@@ -25,7 +25,7 @@
   },
   {
 	"name": "GO parser",
-	"image": "temp",
+	"image": "assets/img/Projects/Go-parser.png",
 	"link": "https://github.com/Dylan-Beppu/go-parser-Dylan-Beppu-SPU",
 	"sourceType": "github",
 	"description": "A parser that takes a program written in a custom 4point language and outlets it to scheme or prolog. This consists of a lexer, parser, and code generator with support for error checking and hanging. This was made as a term project for a concepts in programming class. (private until readme is redone)",

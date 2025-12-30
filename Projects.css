@@ -32,6 +32,10 @@
 	/* margin-right: 20px; */
 }
 
+.project h2 {
+	text-align: center;
+	width: 100%;
+}
 
 .project-text {
 	display: flex;
