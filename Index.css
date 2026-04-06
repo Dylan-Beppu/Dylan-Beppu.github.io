@@ -221,7 +221,7 @@ body {
     left: 0;
     height: 100%;
     width: 100px;
-    background: #ffb085;
+    background: var(--accent-color);
     border-radius: 30px;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     z-index: -1;

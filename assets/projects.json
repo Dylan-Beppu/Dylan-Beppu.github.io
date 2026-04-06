@@ -25,7 +25,7 @@
   },
   {
 	"name": "GO parser",
-	"image": "temp",
+	"image": "assets/img/Projects/Go-parser.png",
 	"link": "https://github.com/Dylan-Beppu/go-parser-Dylan-Beppu-SPU",
 	"sourceType": "github",
 	"description": "A parser that takes a program written in a custom 4point language and outlets it to scheme or prolog. This consists of a lexer, parser, and code generator with support for error checking and hanging. This was made as a term project for a concepts in programming class. (private until readme is redone)",

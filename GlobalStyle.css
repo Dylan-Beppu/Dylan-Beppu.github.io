@@ -13,20 +13,23 @@
     /* --background: #f8dabe; */
     /* --background: #f8dabe; */
 	/* --background: #9ebdea; */
-	--background: #dcd2bd;
+	/* --background: #dcd2bd; */
+	--background: #ffffff;
 	/* --background: hsl(30, 30%, 80%); */
 
 
-	--foreground: #ffe4c4;
+	/* --foreground: #ffe4c4; */
+	--foreground: #d8d8d8;
 
 
-	--highlight-color: #ffb085;
+	--highlight-color: #d8d8d8;
     /* --accent-color: #ff9d4c; */
-    --accent-color: #cc916b;
+    /* --accent-color: #cc916b; */
+	--accent-color: #1e82d9;
 	/* --accent-color: #6f5c4a; */
 
 
-	--accent2-color: #8c6b51;
+	--accent2-color: #1663a5;
 
 	/* --btn-color: #cc916b; */
 
@@ -34,7 +37,7 @@
     --text-select: #ffffff;
 
 	
-    --text2-color: #492700;
+    --text2-color: #404040;
     color: var(--text2-color);
 
 
@@ -209,7 +212,7 @@ h2 {
 
 .pageTitle {
     /* color: var(--accent-color); */
-    color: #da7d31;
+    /* color: #da7d31; */
     font-size: 4rem;
     /* font-style: italic; */
     /* -webkit-text-stroke: #492700; */
