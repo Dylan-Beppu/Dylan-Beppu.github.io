@@ -8,6 +8,10 @@
 body {
     margin: 0;
 }
+#home {
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
 
 #topHalfHome {
     display: flex;
@@ -17,6 +21,13 @@ body {
 	min-height: 330px;
     background-size: cover;
     background-position: center;
+	/* border-radius: 16px; */
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	/* padding: 10px; */
+	background-image: url('./assets/img/Background.JPG');
+	
+
 }
 
 .home-flex {
@@ -250,9 +261,13 @@ body {
 
 
 
+
 /* Dynamic scaling */
-@media (max-width: 875px) {
-	
+@media (max-width: 950px) {
+	#home {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 	
 	.home-flex {
 		/* Color for debugging */
