@@ -1,5 +1,13 @@
 [
   {
+    "name": "Prêts? Allez!",
+    "image": "assets/img/Projects/Fencing.png",
+    "link": "https://pretsallez.com/",
+    "sourceType": " web",
+    "description": "The first fencing game with realistic physics and real-time AI multiplayer. This is a capstone project developed as a team in Unity. I helped with sprint planning and laid out the core architecture for this project. Additionally, built out the player control system, UX design/implementation, player animation using IK and IKPF, player physics,  lighting, and sound recording",
+	"skills": ["C#", "Unity", "Agile", "Scrum", "AI/ML", "UX/UI", "IK", "Networking", "Game design"]
+  },
+  {
     "name": "WASH Shell",
     "image": "assets/img/Projects/WASH.png",
     "link": "https://github.com/Dylan-Beppu/WASH",
