@@ -1,24 +1,4 @@
-// Old one
-// function generateHTML(projects) {
-//     return projects.map(project => `
-//         <div class="Project">
-//                 <h2>${project.name}</h2>
-//                 <div class="Project-content">
-//                     <img class="Project-img" src="${project.image}" alt="${project.name} Image" />
-//                     <div class="Project-overlay">
-//                         <p>${project.description}</p>
-//                         <a href="${project.link}" class="btnInline">
-//                             ${project.sourceType === 'github' ? '<i class="fab fa-brands fa-github"></i>' : '<img class="inlineRblx" src="assets/img/rblxIcon.png"/>'}
-//                             Find it on ${project.sourceType}
-//                         </a>
-//                     </div>
-//                 </div>
-//             </div>
-//     `).join('');
-// }
-
-
-
+// Create the projects list from a json
 function generateHTML(projects) {
 	return projects.map(project => `
 		<div class="project" id="${project.name}">
