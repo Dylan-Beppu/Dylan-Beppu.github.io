@@ -1,29 +1,26 @@
 
-    @font-face {
-        font-family: 'NotoSans';
-		--text-color: #f1f1f1;
-        src: url('assets/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
-    }
+@font-face {
+	font-family: 'NotoSans';
+	--text-color: #f1f1f1;
+    src: url('assets/fonts/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
 
-    :root {
-        --main-font-family: 'NotoSans', sans-serif;
+:root {
+    --main-font-family: 'NotoSans', sans-serif;
 
-        /* Colors */
-        --background: #ffffff;
-        --foreground: #d8d8d8;
-        --highlight-color: #d8d8d8;
-        --accent-color: #1e82d9;
-        --accent2-color: #1663a5;
-        --text-color: #f1f1f1;
-        --text-select: #ffffff;
-        --text2-color: #404040;
-    }
+    /* Colors */
+    --background: #ffffff;
+    --foreground: #d8d8d8;
+    --highlight-color: #d8d8d8;
+    --accent-color: #1e82d9;
+    --accent2-color: #1663a5;
+    --text-color: #f1f1f1;
+    --text-select: #ffffff;
+    --text2-color: #404040;
+}
 
-    body {
-        font-family: var(--main-font-family);
-        color: var(--text2-color);
-        background: var(--background);
-    }
-    /* --accent-color: #cc916b; */
-
-	/* --accent-color: #1e82d9; */
+body {
+    font-family: var(--main-font-family);
+    color: var(--text2-color);
+    background: var(--background);
+}
